@@ -1,0 +1,531 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: -1px 7px 30px #6d686870;
+    z-index: 100;
+}
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0 0 4px;
+}
+header h1 {
+    font-family: verdana;
+    background-image: url(/IMG/IMG-20250613-WA0118.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: #0845c94d;
+    backdrop-filter: blur(5px);
+    animation: fundo-animado 10s ease-in infinite;
+    cursor: default;
+    padding-right: 50px;
+}
+@keyframes fundo-animado {
+    to {
+        background-position-x: -538px;
+    }
+}
+header button {
+    display: none;
+}
+@media (min-width: 600px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #0d3894;
+        display: flex;
+        justify-content: space-around;
+        padding: 4px 0;
+        z-index: 100;
+    }
+}
+.menu button {
+    display: none;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: verdana;
+    padding: 2px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.menu a:hover {
+    background: #fff;
+    color: #0845c9;
+}
+.fundo {
+    background-image: url(/IMG/IMG-20250622-WA0002.jpg);
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+main {
+    margin: 360px 0 0 0;
+    background: transparent;
+}
+
+main .titulo {
+    font-family: arial;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    transform: translate(90px, -140px);
+    text-shadow: -1px -1px 10px #0845c9;
+}
+main .slogan {
+    cursor: pointer;
+    color: #113281;
+    position: absolute;
+    transform: translate(200px, -90px);
+    text-shadow: -1px -1px 10px #9ea7c06c;
+    font-family: verdana;
+}
+main #prefacio {
+    cursor: default;
+    background: #fff;
+    padding: 100px 50px 100px 0;
+    box-shadow: 0 -90px 50px #00000070;
+    display: flex;
+}
+main #prefacio img {
+    width: 500px;
+    height: 350px;
+    margin: 0 70px 0 0;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 3px 5px 40px #073caf86;
+}
+main #prefacio div {
+    width: 500px;
+    font-family: verdana;
+    font-size: 13px;
+}
+main #prefacio div h2 {
+    color: #0845c9;
+    display: inline-block;
+    border-bottom: solid 3px #0845c9;
+    padding: 10px;
+    text-shadow: 1px 10px 50px #0845c9;
+}
+
+
+main #sobre {
+    cursor: default;
+    background: #a6b9ec63;
+    backdrop-filter: blur(5px);
+    padding: 100px 0 100px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+main #sobre img {
+    width: 500px;
+    height: 600px;
+    margin: 0 0 0 70px;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 3px 5px 40px #073caf86;
+}
+main #sobre div {
+    width: 620px;
+    font-family: verdana;
+    font-size: 13px;
+}
+main #sobre div h2 {
+    color: #0845c9;
+    display: inline-block;
+    border-bottom: solid 3px #0845c9;
+    padding: 10px;
+    text-shadow: 1px 10px 50px #0845c9;
+}
+
+main #sobre div .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 255;
+}
+main #sobre div .container .card {
+    flex-grow: 1;
+    background: #0942bece;
+    color: #fff;
+    margin: 10px 5px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+main #sobre div .container .card p:nth-child(1) {
+    color: #033581;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 20px #fff;
+    text-shadow: 1px 1px 10px #6694f7;
+    display: inline-blocK;
+    padding: 15px;
+    border-radius: 50px;
+    animation: pB 5s ease-in-out infinite;
+}
+@keyframes pB {
+    0% {
+        transform: scale(0.2);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.2);
+    }
+}
+main #sobre div .container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px #033581;
+}
+
+main #servicos {
+    text-align: center;
+    font-family: verdana;
+    background: #a6b9ec63;
+    backdrop-filter: blur(5px);
+    font-size: 13px;
+    padding: 50px 0 100px 0;
+    margin: 0;
+    cursor: default;
+}
+main #servicos h2 {
+    text-align: center;
+    color: #0845c9;
+    display: inline-block;
+    border-bottom: solid 3px #0845c9;
+    padding: 10px;
+    text-shadow: 1px 10px 50px #0845c9;
+}
+main #servicos h4 {
+    color: #0845c9;
+}
+main #servicos .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+    padding: 0 50px;
+}
+main #servicos .container .card {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 20px;
+    padding: 50px 0;
+    background: #0845c9c4;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 1px 1px 20px #4471eeb6;
+    font-size: 13px;
+    padding: 30px;
+    transition: .3s ease-in-out;
+}
+main #servicos .container .card:hover {
+    transform: scale(1.05);
+    background: #0234a0;
+    box-shadow: 1px 1px 30px #0446fcc7;
+}
+main #projectos {
+    cursor: default;
+    text-align: center;
+    background: #fff;
+    padding: 70px 0;
+    font-family: verdana;
+    font-size: 13px;
+}
+main #projectos h2 {
+    text-align: center;
+    color: #0845c9;
+    display: inline-block;
+    border-bottom: solid 3px #0845c9;
+    padding: 10px;
+    text-shadow: 1px 10px 50px #0845c9;
+}
+main #projectos h4 {
+    color: #0845c9;
+}
+
+main #contactos {
+    background: #fff;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 0 0 50px 0;
+}
+main #contactos div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+main #contactos div h2 {
+    text-align: center;
+    color: #0845c9;
+    display: inline-block;
+    border-bottom: solid 3px #0845c9;
+    padding: 10px;
+    text-shadow: 1px 10px 50px #0845c9;
+    cursor: default;
+    font-family: verdana;
+}
+main #contactos div a {
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px #073caf86;
+    color: #fff;
+    font-family: verdana;
+    height: 20px;
+    width: 300px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: .3s ease-in;
+}
+main #contactos div a:nth-child(2) {
+    background: #1b9410;
+}
+main #contactos div a:nth-child(3) {
+    background: #3372fa;
+}
+main #contactos div a:nth-child(4) {
+    background: #b33a02c9;
+}
+main #contactos div a .fa-brands, main #contactos div a .fas {
+    font-size: 30px;
+}
+main #contactos div a:hover {
+    transform: scale(1.1);
+}
+
+main #contactos div a:nth-child(2):hover {
+    box-shadow: 1px 1px 40px #016918a8;
+}
+main #contactos div a:nth-child(3):hover {
+    box-shadow: 1px 1px 40px #012c88cb;
+}
+main #contactos div a:nth-child(4):hover {
+    box-shadow: 1px 1px 40px #881c01cb;
+}
+main #contactos form {
+    display: grid;
+    height: 510px;
+    box-shadow: 1px 1px 140px #08550144;
+    padding: 50px 13px;
+    border-radius: 30px;
+    background: #eee9e9;
+}
+main #contactos form p {
+    font-family: verdana;
+    color: #1b9410;
+}
+main #contactos form input {
+    border-radius: 15px;
+    outline: none;
+    border: solid 1px #1b9410;
+    height: 34px;
+    padding-left: 1em;
+    box-shadow: 1px 2px 5px #227c1acc;
+    transition: .3s ease-in-out;
+}
+main #contactos form input:focus, main #contactos form input:valid {
+    border: transparent;
+    border-radius: 10px;
+    border-bottom: solid 3px #20b113;
+    box-shadow: 1px 3px 20px #0f7905a8;
+    background: transparent;
+}
+main #contactos form label {
+    position: absolute;
+    color: #1b9410;
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+main #contactos form #nome:focus~.nome, main #contactos form #nome:valid~.nome {
+    font-size: 10px;
+    color: #2c6926;
+    transform: translate(15px, 51px);
+}
+main #contactos form #email:focus~.email, main #contactos form #email:valid~.email {
+    font-size: 10px;
+    color: #2c6926;
+    transform: translate(15px, 127px);
+}
+main #contactos form label:nth-child(3) {
+    transform: translate(15px, 71px);
+}
+main #contactos form label:nth-child(6) {
+    transform: translate(15px, 150px);
+}
+main #contactos form textarea {
+    padding: 1em;
+    border: solid 1px #1b9410;
+    border-radius: 15px;
+    outline: none;
+}
+main #contactos form textarea:focus {
+    box-shadow: 1px 1px 20px #07520049;
+}
+main #contactos form button {
+    position: relative;
+    margin: 30px 0;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    background: #1b9410;
+    font-weight: bold;
+    transition: .2s ease-in;
+    cursor: pointer;
+    font-size: 20px;
+}
+main #contactos form button .fas {
+    position: absolute;
+    transform: translate(-150px, 5px) rotate(50deg);
+    opacity: 0;
+    transition: .5s ease;
+}
+main #contactos form button:hover .fas {
+    transform: translate(-40px, 5px) rotate(50deg);
+    opacity: 1;
+}
+main #contactos form button span {
+    position: absolute;
+    transform: translate(150px, 5px) rotate(10deg);
+    opacity: 0;
+    transition: .5s ease-out;
+}
+main #contactos form button:hover span {
+    transform: translate(0, 5px) rotate(360deg);
+    opacity: 1;
+}
+main #contactos form button .fa-brands {
+    font-size: 30px;
+    transition: .3s ease-in-out;
+}
+main #contactos form button:hover .fa-brands {
+    transform: translate(0, 10px);
+    opacity: 0;
+}
+main #contactos form button:hover {
+    background: #118304;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px #0b6403;
+}
+
+footer {
+    background: #031130e7;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    margin: 0;
+    padding: 20px 20px 1px 20px;
+    text-align: center;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    font-size: 12px;
+    font-family: arial;
+}
+footer .container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+footer .container div {
+    text-align: left;
+}
+footer .container div h3 {
+    margin: 30px 0;
+}
+footer .container .servicos {
+    cursor: default;
+}
+footer .container .firma {
+    display: flex;
+    flex-direction: column;
+}
+footer .container .firma a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0 13px 0;
+}
+footer .container .caminhos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+footer .container .caminhos div {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+footer .container .caminhos a {
+    background: #38415594;
+    color: #fff;
+    border-radius: 30px;
+    display: inline;
+    text-decoration: none;
+    margin: 0 19px;
+}
+footer .container .caminhos a i {
+    font-size: 30px;
+    margin: 5px 13px;
+}
+footer .container .caminhos a .fa-whatsapp {
+    background: #20b113;
+    border-radius: 20px;
+}
+footer .container .caminhos a .fa-facebook {
+    color: #2765eb;
+    background: #fff;
+    border-radius: 50%;
+    
+}
+footer .container .caminhos a .fas {
+    color: #c57431;
+    height: 25px;
+}
+footer .line {
+    background: #888;
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    margin-top: 30px;
+}
+footer h4 {
+    font-family: arial;
+    font-size: 13px;
+    margin: 5em 0 0 0;
+    cursor: default;
+}
+footer h5 {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+@media (min-width: 600px ) and (max-width: 900px) {
+    main #sobre {
+        cursor: default;
+        background: #fff;
+        padding: 100px 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    main #sobre img {
+        width: auto;
+        height: 400px;
+        margin: 70px;
+        border-radius: 30px;
+        box-shadow: 3px 5px 40px #073caf86;
+    }
+    main #sobre div {
+        width: auto;
+        padding: 20px 100px;
+        font-family: verdana;
+        font-size: 13px;
+    }
+    main #sobre div h2 {
+        color: #0845c9;
+        display: inline-block;
+        border-bottom: solid 3px #0845c9;
+        padding: 10px;
+        text-shadow: 1px 10px 50px #0845c9;
+    }
+    main #sobre div p {
+        text-shadow: 1px 10px 50px #0845c9;
+    }
+    main #sobre div .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 255;
+        width: 500px;
+    }
+
+    main #contactos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin: 0 0 20px 0;
+        padding: 0 50px;
+    }
+
+    footer {
+        background: #23448a;
+        color: #fff;
+        margin: 0;
+        bottom: 20px;
+        padding: 20px 20px 10px 20px;
+        text-align: center;
+    }
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 0 0;
+        font-size: 12px;
+        font-family: arial;
+    }
+    footer .container img {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+}
