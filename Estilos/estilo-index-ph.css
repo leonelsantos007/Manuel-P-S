@@ -8,6 +8,7 @@
     }
     header {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         background: #fff;
         position: fixed;
@@ -26,18 +27,13 @@
         margin: 10px 0 0 4px;
     }
     header h1 {
-        font-size: 13px;
-        margin: 10px;
         font-family: verdana;
-        background-image: url(/IMG/IMG-20250613-WA0118.jpg);
-        background-size: cover;
-        background-clip: text;
-        color: #0845c94d;
-        backdrop-filter: blur(5px);
-        animation: fundo-animado 10s ease-in infinite;
+        color: #0845c9;
         cursor: default;
-        margin: 10px 0 0 4px;
+        font-size: 28px;
+        padding-right: 0;
     }
+
     header button {
         cursor: pointer;
         width: 25px;
@@ -61,7 +57,7 @@
         padding: 0 25px;
         width: auto;
         height: 0;
-        background: #073caf86;
+        background: #031130e7;
         backdrop-filter: blur(5px);
         box-shadow: -5px 5px 50px #073caf86;
         border-radius: 0 0 0 15px;
