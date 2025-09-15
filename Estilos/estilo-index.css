@@ -3,6 +3,9 @@ html {
 }
 body {
     margin: 0;
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
 }
 header {
     display: flex;
@@ -23,7 +26,6 @@ header img {
     margin: 10px 0 0 4px;
 }
 header h1 {
-    font-family: verdana;
     color: #0845c9;
     cursor: default;
     padding-right: 50px;
@@ -64,6 +66,19 @@ header button {
     left: 0;
     z-index: -100;
 }
+
+.btn-wha-fixo {
+	background-color: #38cc2b;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 30px;
+	border-radius: 60px;
+	position: fixed;
+	bottom: 3%;
+	right: 2%;
+	z-index: 1000;
+}
+
 main {
     margin: 360px 0 0 0;
     background: transparent;
@@ -83,7 +98,6 @@ main .slogan {
     position: absolute;
     transform: translate(200px, -90px);
     text-shadow: -1px -1px 10px #9ea7c06c;
-    font-family: verdana;
 }
 
 main #sobre {
@@ -104,7 +118,6 @@ main #sobre img {
 }
 main #sobre div {
     width: 620px;
-    font-family: verdana;
     font-size: 13px;
 }
 main #sobre div h2 {
@@ -133,8 +146,6 @@ main #sobre div .container .card {
     transition: .3s ease-in-out;
 }
 main #sobre div .container .card p:nth-child(1) {
-    color: #033581;
-    background: #f0e5e5;
     font-size: 16px;
     font-weight: bold;
     text-shadow: 1px 1px 10px #6694f7;
@@ -149,7 +160,6 @@ main #sobre div .container .card:hover {
 
 main #servicos {
     text-align: center;
-    font-family: verdana;
     background: #fff;
     font-size: 13px;
     padding: 50px 0 100px 0;
@@ -196,7 +206,6 @@ main #projectos {
     text-align: center;
     background: #fff;
     padding: 70px 0;
-    font-family: verdana;
     font-size: 13px;
 }
 main #projectos h2 {
@@ -232,7 +241,6 @@ main #contactos div h2 {
     padding: 10px;
     text-shadow: 1px 10px 50px #0845c9;
     cursor: default;
-    font-family: verdana;
 }
 main #contactos div a {
     margin: 15px 0;
@@ -240,7 +248,6 @@ main #contactos div a {
     border-radius: 15px;
     box-shadow: 1px 1px 30px #073caf86;
     color: #fff;
-    font-family: verdana;
     height: 20px;
     width: 300px;
     text-decoration: none;
@@ -288,7 +295,6 @@ footer .container {
     justify-content: space-between;
     margin: 20px 0 0 0;
     font-size: 12px;
-    font-family: arial;
 }
 footer .container img {
     width: 150px;
@@ -324,8 +330,6 @@ footer .container .caminhos div {
     flex-direction: row;
 }
 footer .container .caminhos a {
-    background: #38415594;
-    color: #fff;
     border-radius: 30px;
     display: inline;
     text-decoration: none;
@@ -336,17 +340,16 @@ footer .container .caminhos a i {
     margin: 5px 13px;
 }
 footer .container .caminhos a .fa-whatsapp {
-    background: #20b113;
+	color: #1b9410;
     border-radius: 20px;
 }
 footer .container .caminhos a .fa-facebook {
-    color: #2765eb;
-    background: #fff;
+	color: #457ffc;
     border-radius: 50%;
     
 }
 footer .container .caminhos a .fas {
-    color: #c57431;
+	color: #d87d33;
     height: 25px;
 }
 footer .line {
@@ -357,13 +360,11 @@ footer .line {
     margin-top: 30px;
 }
 footer h4 {
-    font-family: arial;
     font-size: 13px;
     margin: 5em 0 0 0;
     cursor: default;
 }
 footer h5 {
-    font-family: arial;
     font-size: 12px;
     margin-bottom: 0;
     cursor: pointer;
