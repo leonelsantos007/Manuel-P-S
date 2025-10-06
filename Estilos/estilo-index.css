@@ -107,7 +107,7 @@ main .slogan {
 
 main #sobre {
     cursor: default;
-    background: #f0e5e5;
+    background-color: #f0e5e5;
     backdrop-filter: blur(5px);
     padding: 100px 0 100px 10px;
     margin: 0;
@@ -125,6 +125,10 @@ main #sobre img {
 main #sobre div {
     width: 620px;
     font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    padding: 40px;
+    border-radius: 20px;
 }
 main #sobre div h2 {
     color: #0845c9;
@@ -141,7 +145,7 @@ main #sobre div .container {
 }
 main #sobre div .container .card {
     flex-grow: 1;
-    background: #0942bece;
+    background: #0942be;
     color: #fff;
     margin: 10px 5px;
     padding: 20px 10px;
@@ -194,8 +198,8 @@ main #servicos .container .card {
     flex-grow: 1;
     margin: 20px;
     padding: 50px 0;
-    background: #0845c9c4;
     border-radius: 15px;
+    background: #0845c9;
     color: #fff;
     box-shadow: 1px 1px 20px #4471eeb6;
     font-size: 13px;
@@ -205,9 +209,34 @@ main #servicos .container .card {
 }
 main #servicos .container .card:hover {
     transform: scale(1.05);
-    background: #0234a0;
     box-shadow: 1px 1px 30px #0446fcc7;
 }
+main #servicos .container .card:nth-child(1) {
+    background-image: url(/IMG/homem_teto_falso.png);
+    background-position: center;
+    background-size: cover;
+}
+main #servicos .container .card:nth-child(2) {
+    background-image: url(/IMG/homem_estuque.png);
+    background-position: center;
+    background-size: cover;
+}
+main #servicos .container .card:nth-child(3) {
+    background-image: url(/IMG/homem_pintura2.png);
+    background-position: center;
+    background-size: cover;
+}
+main #servicos .container .card:nth-child(4) {
+    background-image: url(/IMG/homem_ladrilho.png);
+    background-position: center;
+    background-size: cover;
+}
+main #servicos .container .card:nth-child(5) {
+    background-image: url(/IMG/homem_macacao.png);
+    background-position: center;
+    background-size: cover;
+}
+
 main #projectos {
     cursor: default;
     text-align: center;
@@ -291,7 +320,10 @@ main #contactos div a:nth-child(4):hover {
 }
 
 main #contactos .info2 {
-    background: #1f02a0;
+    background-color: #1f02a0;
+    background-image: url(/IMG/homem_macacao2.png);
+    background-position: center;
+    background-size: cover;
     color: #fff;
     padding: 30px;
     border-bottom-left-radius: 100px;
@@ -312,14 +344,32 @@ footer {
     color: #fff;
     margin: 0;
     padding: 20px 20px 1px 20px;
+    border-top: solid 17px #073997;
     text-align: center;
     font-weight: bold;
+    background-image: url(/IMG/equipe.png);
+    background-position: center;
+    background-size: cover;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/IMG/equipe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    z-index: 0;
 }
 footer .container {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 0 0;
     font-size: 12px;
+    position: relative;
+    z-index: 1;
 }
 footer .container img {
     width: 150px;
@@ -383,14 +433,20 @@ footer .line {
     display: inline-block;
     height: 1px;
     margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 footer h4 {
     font-size: 13px;
     margin: 5em 0 0 0;
     cursor: default;
+    position: relative;
+    z-index: 1;
 }
 footer h5 {
     font-size: 12px;
     margin-bottom: 0;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
