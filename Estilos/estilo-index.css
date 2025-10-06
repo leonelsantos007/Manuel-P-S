@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
 	font-family: "Poppins", sans-serif;
@@ -10,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background: #fff;
+    background: #ffffff;
     position: fixed;
     top: 0;
     right: 0;
@@ -37,11 +38,14 @@ header button {
     .menu {
         position: fixed;
         top: 0;
-        left: 0;
         right: 0;
-        background: #031130e7;
+        width: 300px;
+        height: 20px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 2px 5px 10px #0c54c06b;
+        background: #cad4dd50;
         display: flex;
-        justify-content: space-around;
+        justify-content: right;
         padding: 1px;
         z-index: 100;
     }
@@ -50,11 +54,12 @@ header button {
     display: none;
 }
 .menu a {
-    color: #fff;
+    color: #0845c9;
     text-decoration: none;
     font-family: calibri;
     font-size: 13px;
     padding: 1px;
+    margin-right: 19px;
 }
 .fundo {
     background-image: url(/IMG/IMG-20250622-WA0002.jpg);
@@ -108,6 +113,7 @@ main #sobre {
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
+    font-weight: bold;
 }
 main #sobre img {
     width: 500px;
@@ -193,6 +199,7 @@ main #servicos .container .card {
     color: #fff;
     box-shadow: 1px 1px 20px #4471eeb6;
     font-size: 13px;
+    font-weight: bold;
     padding: 30px;
     transition: .3s ease-in-out;
 }
@@ -254,6 +261,7 @@ main #contactos div a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: bold;
     transition: .3s ease-in;
 }
 main #contactos div a:nth-child(2) {
@@ -282,6 +290,22 @@ main #contactos div a:nth-child(4):hover {
     box-shadow: 1px 1px 40px #881c01cb;
 }
 
+main #contactos .info2 {
+    background: #1f02a0;
+    color: #fff;
+    padding: 30px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 70px;
+    box-shadow: 7px 10px 10px #2f09db91;
+}
+main #contactos .info2 p {
+    font-weight: bold;
+    color: #fff;
+}
+
+
 footer {
     background: #031130e7;
     backdrop-filter: blur(5px);
@@ -289,6 +313,7 @@ footer {
     margin: 0;
     padding: 20px 20px 1px 20px;
     text-align: center;
+    font-weight: bold;
 }
 footer .container {
     display: flex;

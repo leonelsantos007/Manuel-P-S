@@ -1,7 +1,7 @@
 #areaFundo {
     position: fixed;
-    background: #57667ed7;
-    backdrop-filter: blur(5px);
+    background: #777f8b79;
+    backdrop-filter: blur(3px);
     top: 0;
     left: 0;
     height: 100%;
@@ -11,23 +11,7 @@
     justify-content: center;
     place-items: center;
 }
-#areaFundo span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 15px;
-    font-size: 30px;
-    color: #fff;
-    font-family: arial;
-    background: #c4c0c073;
-    border-radius: 0 20px 0 20px;
-    cursor: pointer;
-    transition: .1s ease-in;
-}
-#areaFundo span:nth-child(1):hover {
-    background: #8a8787af;
-    color: #fadede;
-}
+
 #areaFundo #infoContent {
     background: #fff;
     padding: 20px;
@@ -39,23 +23,31 @@
     text-align: right;
 }
 #areaFundo #infoContent .botao-card button {
-    width: 50px;
+    width: 30px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     outline: none;
     border: none;
     background: #e42c2c;
     font-size: 15px;
     color: #fff;
     cursor: pointer;
+    animation: .3s ease-out;
+}
+#areaFundo #infoContent .botao-card button:hover {
+    background: #e75d5d;
+    transform: scale(1.03);
 }
 #areaFundo #infoContent h3 {
     color: #2542a3;
     font-size: 27px;
     display: inline;
-    border: solid 2px;
+    border: solid 1px;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 1.5px 4px 13px #2542a3;
+    border-left: none;
+    border-top: none;
 }
 #areaFundo #infoContent p {
     font-size: 18px;
