@@ -7,6 +7,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	font-weight: 100;
 	font-style: normal;
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -89,6 +90,67 @@ main {
     background: transparent;
 }
 
+.elemento-esquerdo {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 700ms ease-in-out;
+}
+.elemento-direito {
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1180ms ease-in-out;
+}
+.elemento-cima {
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 870ms ease-in-out;
+}
+.elemento-baixo {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1000ms ease-in-out;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .elemento-cima, .elemento-direito {
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: 870ms ease-in-out;
+    }
+    .elemento-baixo, .elemento-esquerdo {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 1000ms ease-in-out;
+    }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+   .elemento-esquerdo {
+        transform: translateX(-50px);
+        opacity: 0;
+        transition: 700ms ease-in-out;
+    }
+    .elemento-direito {
+        transform: translateX(50px);
+        opacity: 0;
+        transition: 1180ms ease-in-out;
+    }
+    .elemento-cima {
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: 870ms ease-in-out;
+    }
+    .elemento-baixo {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 1000ms ease-in-out;
+    }
+}
+
+.elemento-esquerdo.mostrar, .elemento-direito.mostrar, .elemento-cima.mostrar, .elemento-baixo.mostrar {
+    transform: translate(0);
+    opacity: 1;
+}
+
 main .titulo {
     font-family: arial;
     cursor: pointer;
@@ -153,7 +215,7 @@ main #sobre div .container .card {
     width: 100px;
     text-align: center;
     font-size: 14px;
-    transition: .3s ease-in-out;
+
 }
 main #sobre div .container .card p:nth-child(1) {
     font-size: 16px;
@@ -164,8 +226,7 @@ main #sobre div .container .card p:nth-child(1) {
     border-radius: 5px;
 }
 main #sobre div .container .card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 1px 20px #033581;
+    cursor: pointer;
 }
 
 main #servicos {
@@ -205,11 +266,9 @@ main #servicos .container .card {
     font-size: 13px;
     font-weight: bold;
     padding: 30px;
-    transition: .3s ease-in-out;
 }
 main #servicos .container .card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 1px 30px #0446fcc7;
+    cursor: pointer;
 }
 main #servicos .container .card:nth-child(1) {
     background-image: url(/IMG/homem_teto_falso.png);
@@ -290,8 +349,7 @@ main #contactos div a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-weight: bold;
-    transition: .3s ease-in;
+    font-weight: bold;    
 }
 main #contactos div a:nth-child(2) {
     background: #1b9410;
@@ -305,18 +363,18 @@ main #contactos div a:nth-child(4) {
 main #contactos div a .fa-brands, main #contactos div a .fas {
     font-size: 30px;
 }
-main #contactos div a:hover {
-    transform: scale(1.1);
-}
 
 main #contactos div a:nth-child(2):hover {
     box-shadow: 1px 1px 40px #016918a8;
+    cursor: pointer;
 }
 main #contactos div a:nth-child(3):hover {
     box-shadow: 1px 1px 40px #012c88cb;
+    cursor: pointer;
 }
 main #contactos div a:nth-child(4):hover {
     box-shadow: 1px 1px 40px #881c01cb;
+    cursor: pointer;
 }
 
 main #contactos .info2 {
